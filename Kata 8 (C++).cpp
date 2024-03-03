@@ -12,8 +12,8 @@ class Same {
 public:
     // Static prototypes allows for the member functions to be called without creating
     // an instance of the class.
-    static void vSwap(vector<int>& my_vector, int a, vector<int>::iterator& b_it);
-    static bool comp(vector<int>& a, vector<int>& b);
+    static void vSwap(vector<int>& , int , vector<int>::iterator& );
+    static bool comp(vector<int>& , vector<int>& );
 };
 
 // Takes the index of the first vector and the iterator of the second and 
@@ -63,8 +63,6 @@ bool Same::comp(vector<int>& a, vector<int>& b) {
 int main(){
     //std::vector<int> a = { 121, 144, 19, 161, 19, 144, 19, 11 };
     //std::vector<int> b = { 20736, 14641, 361, 25921, 361, 20736, 361, 121 };
-    //std::vector<int> a = { 5, 3, 4 };
-    //std::vector<int> b = { 9, 15, 25 };
     std::vector<int> a = { 121, 144, 19, 161, 19, 144, 19, 11 };
     std::vector<int> b = { 14641, 20736, 361, 25921, 361, 20736, 362, 121 };
     static bool cBool = Same::comp(a, b);
