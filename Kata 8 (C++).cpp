@@ -10,8 +10,8 @@ using namespace std;
 
 class Same {
 public:
-    // Static prototypes allows for the member functions to be called without creating
-    // an instance of the class.
+    // Static prototypes allow for the member functions to be called without having
+    // to create an instance of the class.
     static void vSwap(vector<int>& , int , vector<int>::iterator& );
     static bool comp(vector<int>& , vector<int>& );
 };
